@@ -1,0 +1,60 @@
+.container {
+    width: 700px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.selection-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.available-courses, .selected-courses {
+    width: 200px;
+    width: 300px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.course-list, .selected-list {
+    border: 1px solid black;
+    height: 300px;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.course {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 740px) {
+    .container {
+        width: 90%;
+    }
+
+    .selection-section {
+        flex-direction: column;
+    }
+
+    .available-courses, .selected-courses {
+        width: 100%;
+    }
+}

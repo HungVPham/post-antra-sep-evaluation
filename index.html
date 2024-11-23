@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection</title>
+    <meta name="author" content="Viet Hung Pham">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form id="course-selection-form">
+        <div class="container">
+            <div class="selection-section">
+                <div class="available-courses">
+                    <div id="course-list-id" class="course-list">
+                        <h2>Available Courses</h2>
+                    </div>
+                </div>
+                <div class="selected-courses">
+                    <div id="selected-course-list-id" class="selected-list">
+                        <h2>Selected Courses</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <span>Total Credit: <span id="total-credit"></span></span>
+                <button id="select-button">Select</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="js/crudAPI.js"></script>
+    <script src="js/courseSelectionApp.js"></script>
+</body>
+</html>
